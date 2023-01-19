@@ -1,0 +1,67 @@
+/* ============= the syles for close icon =============*/
+
+.close_ {
+  color: #aaa;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 40px;
+  font-weight: bold;
+  z-index: 21;
+}
+
+.close_:hover,
+.close_:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.menu-content {
+  z-index: 20;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(to right, #4fb518, #13ffef);
+}
+body.overflow {
+  overflow: hidden;
+}
+
+.menu-content ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.menu-content ul li {
+  margin: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #424242;
+}
+.menu-humberger {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 43px;
+  height: 43px;
+  z-index: 19;
+  top: 10px;
+  right: 20px;
+  background-color: white;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 100%;
+  overflow: hidden;
+  fill: #424242;
+  cursor: pointer;
+}
+.menu-humberger svg {
+  transform: scale(0.5);
+}

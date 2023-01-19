@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internet Engineering Class Home</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="modal.css">
+  <link rel="stylesheet" href="menu.css">
+  <script src="modal.js" defer></script>
+  <script src="menu.js" defer></script>
+</head>
+
+<body>
+  <div class="menu-humberger">
+    <svg viewBox="0 0 100 80" width="40" height="40">
+      <rect width="100" height="16" rx="10"></rect>
+      <rect y="30" width="100" height="16" rx="10"></rect>
+      <rect y="60" width="100" height="16" rx="10"></rect>
+    </svg>
+  </div>
+  <div class="menu-content hidden">
+    <span class="close_">&times;</span>
+    <ul>
+      <li id="link_start">01 Start</li>
+      <li id="link_lectures">02 Course Lectures</li>
+      <li id="link_books">03 Related Books</li>
+    </ul>
+  </div>
+  <div class="backdrop hidden"></div>
+  <div class="modal modal_book_js hidden">
+    <span class="close">&times;</span>
+    <img class="modal-img" src="img/Books/JSBook.jpg" alt="">
+    <p>Topics include:
+
+      Types, values, variables, expressions, operators, statements, objects, and arrays
+      Functions, classes, modules, iterators, generators, Promises, and async/await
+      JavaScript's standard library: data structures, regular expressions, JSON, i18n, etc.
+      The web platform: documents, components, graphics, networking, storage, and threads
+      Node.js: buffers, files, streams, threads, child processes, web clients, and web servers
+      Tools and language extensions that professional JavaScript developers rely on.</p>
+    <a href="https://www.amazon.com/gp/product/1491952024/"><button class="btn btn-shop">Buy now</button></a>
+
+  </div>
+  <div class="modal modal_book_react hidden">
+    <span class="close">&times;</span>
+    <img class="modal-img" src="img/Books/ReactBook.jpg" alt="">
+    <p> Core Concepts
+
+      Pragmatic: Master React while building a complete application step by step.
+      Problems Solving: You need to experience a problem first before solving it.
+      The Why: Readers like how the book answers the Why, not only the How.
+    </p>
+    <a
+      href="https://www.amazon.com/Road-learn-React-pragmatic-React-js/dp/172004399X/ref=d_pd_sbs_sccl_2_3/130-5751593-0029724?pd_rd_w=m9yJh&content-id=amzn1.sym.3676f086-9496-4fd7-8490-77cf7f43f846&pf_rd_p=3676f086-9496-4fd7-8490-77cf7f43f846&pf_rd_r=MN81G3T0MAX9FR9FAENV&pd_rd_wg=XsyuS&pd_rd_r=c3fff6b6-0e60-41bd-b038-2e16c81b5390&pd_rd_i=172004399X&psc=1"><button
+        class="btn btn-shop">Buy now</button></a>
+  </div>
+  <div class="modal modal_book_go hidden">
+    <span class="close">&times;</span>
+    <img class="modal-img" src="img/Books/GoBook.jpg" alt="">
+
+    <p>
+      Go is a general-purpose programming language with a clean syntax and advanced features, including concurrency.
+      This book provides the one-on-one support you need to get started with the language, with short, easily digestible
+      chapters that build on one another. By the time you finish this book, not only will you be able to write real Go
+      programs, you'll be ready to tackle advanced techniques.
+
+      Jump into Go basics, including data types, variables, and control structures
+      Learn complesuggestions to help you master the craft of programming
+    </p>
+    <a href="https://www.amazon.fr/dp/1491941952?psc=1&th=1&linkCode=gs2&tag=vhpoet0ca-21"><button
+        class="btn btn-shop">Buy now</button></a>
+  </div>
+
+  <header class="row">
+    <div class="header-text">
+
+      <h1 class="header-text-head">
+        Internet <br> Engineering
+      </h1>
+      <p class="header-text-body">Is what we are going to <br> learn in this course</p>
+    </div>
+    <a href="#books">
+      <button class="header-btn btn">See this course related books</button>
+
+    </a>
+  </header>
+  <section class="row" id="lectures">
+    <div class="lectures-col">
+      <img src="/img/lectures/http.png" alt="">
+      <h3>HTTP</h3>
+      <p>The Hypertext Transfer Protocol is an application layer protocol in the Internet protocol suite model for
+        distributed, collaborative, hypermedia information </p>
+    </div>
+    <div class="lectures-col">
+      <img src="/img/lectures/html.png" alt="">
+      <h3>HTML CSS</h3>
+      <p>Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in
+        a markup language such as HTML or XML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and
+        JavaScript</p>
+    </div>
+    <div class="lectures-col">
+      <img src="/img/lectures/js.png" alt="">
+      <h3>JS</h3>
+      <p>JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the
+        World Wide Web, alongside HTML and CSS. As of 2022, 98% of websites use JavaScript on the client side for
+        webpage behavio</p>
+    </div>
+    <div class="lectures-col">
+      <img src="/img/lectures/go.png" alt="">
+      <h3>GOLANG</h3>
+
+      <p>Go is a statically typed, compiled programming language designed at Google by Robert Griesemer, Rob Pike, and
+        Ken Thompson. It is syntactically similar to C,
+        and CSP-style concurrency.</p>
+
+    </div>
+    <div class="clear-fix"></div>
+  </section>
+  <section class="row" id="books">
+    <h3 class="books-heading">MOST POPULAR BOOKS</h3>
+    <div class="books-col">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="img/Books/js.jpg" alt="Avatar" style="width:100%;height:288px;">
+            <div>By David Flangenen</div>
+            <div>Seventh Edition</div>
+            <div>Published at 2020</div>
+          </div>
+          <div class="flip-card-back">
+            <h1>JavaScript <br> the Difinitive guide</h1>
+            <p>25.95$</p>
+            <button id="book-js" class="btn btn-show">Learn more</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="books-col">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="img/Books/react.jpg" alt="Avatar" style="width:100%;height:288px;">
+            <div>By Robin Weiruch</div>
+            <div>2022 Edition</div>
+            <div>Published at 2022</div>
+          </div>
+          <div class="flip-card-back">
+            <h1>The road to React</h1>
+            <p>29.99$</p>
+            <button id="book-react" class="btn btn-show">Learn more</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="books-col">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="img/Books/go.jpg" alt="Avatar" style="width:100%;height:288px;">
+            <div>By Caleb Doxsey</div>
+            <div>First Edition</div>
+            <div>Published at 2016</div>
+          </div>
+          <div class="flip-card-back">
+            <h1>Introducing Go</h1>
+            <p>23.34 ₤</p>
+            <button id="book-go" class="btn btn-show">Learn more</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="clear-fix"></div>
+  </section>
+  <footer class="row">
+    <div class="footer-col foot-1">
+      <ul>
+        <li><a class="foot-link" href="#">CONTACT US</a></li>
+        <li><a class="foot-link" href="#">CLASS INFO</a></li>
+        <li><a class="foot-link" href="#">PRIVACY POLICY</a></li>
+        <li><a class="foot-link" href="#">TERMS</a></li>
+      </ul>
+    </div>
+    <div class="footer-col foot-2">Composed by Ali Fadaeimanesh
+      @ali_fadaeim <br> All rights reserved</div>
+    <div class="clear-fix"></div>
+  </footer>
+</body>
+
+</html>
