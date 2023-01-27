@@ -171,6 +171,7 @@ header.row {
 }
 .btn-show {
   margin: 10px;
+  background: black;
 }
 
 /* ============= the styles for card flips =============*/
@@ -252,7 +253,3 @@ footer.row ul {
 }
 
 /* ============= a general style for showing some elements conditionally =============*/
-
-.hidden {
-  display: none;
-}

@@ -1,4 +1,4 @@
-/* ============= the syles for close icon =============*/
+/* ============= the styles for close icon =============*/
 
 .close_ {
   color: #aaa;
@@ -64,4 +64,14 @@ body.overflow {
 }
 .menu-humberger svg {
   transform: scale(0.5);
+}
+
+#menu {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+#menu:target {
+  visibility: visible;
+  opacity: 1;
 }
